@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+
+:root {
+    --dark: #1f1c1c;
+}
+
+.frame {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius:5px;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    background: var(--dark);
+    background: linear-gradient(to top right, #3a3a36 0%, var(--dark) 100%);
+    color: var(--dark);
+    font-family: 'Open  Sans', Helvetica, sans-serif;
+}
+
+.center {
+    position:absolute;
+    top:50px;
+    left: 40px;
+    height: 299px;
+    width: 320px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+}
+
+.profile {
+    float:left;
+    width:200px;
+    height: 500px;
+    text-align: center;
+}
+
+.profile__image {
+    position:relative;
+    width:70px;
+    height:70px;
+    margin: 38px auto 0 auto;
+}
+
+.circle-1 {
+    box-sizing: border-box;
+    position:absolute;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--dark) var(--dark) var(--dark) transparent;
+    width: 80px;
+    height: 80px;
+    top: -3px;
+    left: -3px;
+    transition: all 1.5s ease-in-out;
+}
+
+.circle-2 {
+    box-sizing: border-box;
+    position:absolute;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    transition: all 1.5s ease-in-out;
+    width: 84px;
+    height: 84px;
+    top: -6px;
+    left: -6px;
+    border-color: var(--dark) transparent var(--dark) var(--dark);
+}
+
+.profile:hover{
+    cursor: pointer;
+}
+
+.circle-1:hover, .circle-2:hover {
+    transform: rotate(360deg);
+}
+
+
+img {
+    display: block;
+    border-radius: 50%;
+    background: #F5E8DF;
+}
+
+.profile__name {
+    font-size:15px;
+    font-weight:600;
+    margin-top: 20px;
+}
+
+.profile__job {
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.actions {
+    margin-top: 33px;
+}
+
+.btn__follow, .btn__message {
+    height: 30px;
+    width: 120px;
+    display:block;
+    background-color: none;
+    margin: 0 auto 10px auto;
+    border: 1px solid var(--dark);
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+    color: var(--dark);
+}
+
+.btn__follow:hover, .btn__message:hover {
+    background:#786450;
+    color: #fff;
+    cursor: pointer;
+}
+
+.stats {
+    float: left;
+}
+
+.stats__box {
+    width: 120px;
+    height: 100px;
+    background: #786450;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 28px;
+    transition: all .4s ease-in-out;
+    color: #2b2b2b;
+}
+
+.stats__box:hover{
+    background: #2b2b2b;
+    color: #fff;
+    cursor: pointer;
+}
+
+.stats__box:nth-child(2){
+    margin: 1px auto;
+}
+
+.stats__box:hover{
+    background: #2b2b2b;
+    color: #fff;
+    cursor: pointer;
+}
+
+span {
+    display: block;
+}
+
+.value {
+    font-weight: 600;
+    color: #fff;
+}
+
+.parameter {
+    font-size:11px;
+    color: #fff;
+}
+
